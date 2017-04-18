@@ -1,0 +1,91 @@
+<!DOCTYPEhtml>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+   		 <title>Crystal Collector</title>
+		<!-- BOOTSTRAP (even though youre not using it lololol) -->
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<!-- MY CSS -->
+		<link type="text/css" rel="stylesheet" href="assets/style-cc.css">
+
+	</head>
+
+
+	<body id="bod">
+
+		<div class="gameTitleBox">
+			<h1 class="title"> Crystals Collector!</h1>
+		</div>
+
+		<div class="gameInstructionsBox">
+			<p class="instructions">
+				You will be given a random number at the start of the game.
+			</p>
+			<br>
+			<p class="instructions">
+				There are four crystals below. By clicking on a crystal you will add a specific
+				amount of points to your total score.
+			</p>
+			<br>
+			<p class="instructions">
+				You win the game by matching your total score to the random number. You lose the
+				game if your total score goes above the random number.
+			</p>
+			<br>
+			<p class="instructions">
+				The value of each crystal is hidden until you click on it.
+			</p>
+			<br>
+			<p class="instructions">
+				Each time the game resets, the random number and crystal values reset.
+			</p>
+			<br>
+		</div>
+
+		<div class="randomNumberContainer">
+			<p id=randomNumber value=""></p>
+
+		</div>
+		
+		<div class="winsLosses">
+			<div class="winContainer">
+				<h3 class="wins"> Wins: </h3>
+				<p id="winTally"></p>
+			</div>
+			<div class="lossContainer">		
+				<h3 class="losses"> Losses: </h3>
+				<p id="lossTally"></p>
+			</div>
+		</div>
+
+		<div class="rubysContainer">
+			<input type="image" class="ruby" id="rub1" src="assets/images/ruby1.png">
+
+			<input type="image" class="ruby" id="rub2" src="assets/images/ruby2.png">
+
+			<input type="image" class="ruby" id="rub3" src="assets/images/ruby3.png">
+
+			<input type="image" class="ruby" id="rub4" src="assets/images/ruby4.png">
+		</div>
+
+		<div class="yourScoreBox">
+			<p class="yourScore"> Your Total Score Is: </p>
+		</div>
+
+		<div class="scoreContainer">
+			<p id="yourScore"></p>
+		</div>
+
+		<!-- JAVASCRIPT -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="assets/script-cc.js"></script>
+		 
+	</body>
+
+</html>
